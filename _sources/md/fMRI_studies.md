@@ -82,7 +82,7 @@ The proprocessed data(for neutral runs):
 Complementary contents:
 ```{seealso}
 - [_Functional Magnetic Resonance Imaging_][Scott], Charpter 10
-- An introdution [PDF][Kelly] created by Kelly
+- An introdution [_PDF_][Kelly] created by Kelly
 ```
 
 
@@ -192,4 +192,4 @@ Have fun in learning!
    [3dMVM_afni]: <https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dMVM.html>
    [3dLME_afni]: <https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dLME.html>
    [afni_program]: <https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/statistics/main_toc.html>
-   [Kelly]: <../../_extra/RA_preproc_intro.pdf>
+   [Kelly]: <https://github.com/songst7/fMRI_studies/blob/main/_extra/RA_preproc_intro.pdf>
