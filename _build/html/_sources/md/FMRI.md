@@ -2,7 +2,7 @@
  _Studying resources and introduction to fMRI_
 ## Important resource
 Following book and videos will lead and cover the entire studying of fMRI:
-- [Textbook][Russell]: _Handbook of Functional MRI Data Analysis_
+- Textbook: _Handbook of Functional MRI Data Analysis_
 - [Videos][Martin]: _Principles of fMRI_
 
 Meanwhile, **AFNI**, as one of the leading softwares for the analysis and display of multiple MRI modalities will be widely used in the lab. [Click here][afni] to learn more and follow the instruction to install it on your local computer.
@@ -26,7 +26,7 @@ Stimulus timing files
 
 
 ### 1. Introduction to fMRI
-- Charpter 1-2 in [Textbook][Russell]
+- Charpter 1-2 in Textbook
 - Module 1-12 of Part 1 in [Videos][Martin]
 
 ```{admonition} Key points
@@ -48,7 +48,7 @@ Addition to above readings and videos, here are some complementary contents whic
 
 
 ### 2. Preprocessing of fMRI data
-- Charpter 3-4 in [Textbook][Russell]
+- Charpter 3-4 in Textbook
 - Module 13-14 of Part 1 in [Videos][Martin]
 
 ```{admonition} Key points
@@ -97,7 +97,7 @@ Before dive into this charpter, one should at least have some systemic awareness
 There are a lot of excellent resources other than above list. Please be free to search, ask and learn. 
 
 For fMRI related analysis:
-- [Textbook][Russell]: Charpter 5
+- Textbook: Charpter 5
 - Module 15-22 of Part 1 in [Videos][Martin]
 
 ```{admonition} Key points
@@ -137,7 +137,7 @@ https://github.com/LCE-UMD/mood-anxiety/blob/main/01-final_gm_85/01-data_preproc
 ```
 
 ### 4. Group level analysis
-- Charpter 6-7, 10 in [Textbook][Russell]
+- Charpter 6-7, 10 in Textbook
 - Module 23-29 of Part 1 in [Videos][Martin] 
 
 ```{admonition} Key points
@@ -163,7 +163,7 @@ class: seealso
 ```
 
 ### 5. What' more
-Apart from above standard approach for fMRI analysis, more interesting contents such as brain connectivity, selection bias, graph theory etc. are just around the corner. The remaining part of [Textbook][Russell] and Part 2 of [Videos][Martin] have more details for them. 
+Apart from above standard approach for fMRI analysis, more interesting contents such as brain connectivity, selection bias, graph theory etc. are just around the corner. The remaining part of Textbook and Part 2 of [Videos][Martin] have more details for them. 
 Moreover, in addition to analyze fMRI images from frequentist point of view, Bayesian approach is gradually becoming popular. Here is a good [notebook][bayes] about practical Bayesian model in fMRI
 
 Have fun in learning!
@@ -173,7 +173,6 @@ Have fun in learning!
 
 [//]: # (Reference links)
 
-   [Russell]: <https://www.cs.mtsu.edu/~xyang/fMRIHandBook.pdf>
    [Martin]: <https://www.youtube.com/channel/UC_BIby85hZmcItMrkAlc8eA/videos?view=0&sort=da&flow=grid>
    [afni]: <https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/index.html#>
    [Scott]: <https://radktob.files.wordpress.com/2017/05/scott_a-_huettel_allen_w-_song_gregory_mccarthybookzz-org1.pdf>
