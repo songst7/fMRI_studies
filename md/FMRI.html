@@ -1,0 +1,686 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>FMRI &#8212; fMRI studies</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'md/FMRI';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo_sepia.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo_sepia.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    FMRI
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/songst7/fMRI_studies" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/songst7/fMRI_studies/issues/new?title=Issue%20on%20page%20%2Fmd/FMRI.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/md/FMRI.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>FMRI</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-resource">Important resource</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-example">Practice example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#study-plan">Study plan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-fmri">1. Introduction to fMRI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-of-fmri-data">2. Preprocessing of fMRI data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#first-level-analysis">3. First level analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-level-analysis">4. Group level analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-more">5. What’ more</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="fmri">
+<h1>FMRI<a class="headerlink" href="#fmri" title="Permalink to this heading">#</a></h1>
+<p><em>Studying resources and introduction to fMRI</em></p>
+<section id="important-resource">
+<h2>Important resource<a class="headerlink" href="#important-resource" title="Permalink to this heading">#</a></h2>
+<p>Following book and videos will lead and cover the entire studying of fMRI:</p>
+<ul class="simple">
+<li><p>Textbook: <em>Handbook of Functional MRI Data Analysis</em></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/channel/UC_BIby85hZmcItMrkAlc8eA/videos?view=0&amp;sort=da&amp;flow=grid">Videos</a>: <em>Principles of fMRI</em></p></li>
+</ul>
+<p>Meanwhile, <strong>AFNI</strong>, as one of the leading softwares for the analysis and display of multiple MRI modalities will be widely used in the lab. <a class="reference external" href="https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/index.html#">Click here</a> to learn more and follow the instruction to install it on your local computer.</p>
+</section>
+<section id="practice-example">
+<h2>Practice example<a class="headerlink" href="#practice-example" title="Permalink to this heading">#</a></h2>
+<p>This plan will use a recent study of our lab as practices in fMRI data preprocessing, analysis and visualization. The study,
+<a class="reference external" href="https://direct-mit-edu.proxy-um.researchport.umd.edu/jocn/article/34/3/495/108894/Distributed-and-Multifaceted-Effects-of-Threat-and">Distributed and Multifaceted Effects of Threat and Safety</a>, also named as <strong>MAX</strong>, aims to examine how anxious apprehension is processed in the human brain.
+Details of data and models can be found at our <a class="reference external" href="https://github.com/LCE-UMD/mood-anxiety">github page</a>.</p>
+<p><strong>All data require access permission to Bwift&#64;UMD.eud</strong>
+Raw data:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/data/bswift-1/Pessoa_Lab/MAX/dataset/raw/MAX???
+</pre></div>
+</div>
+<p>Stimulus timing files</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">bswift</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">Pessoa_Lab</span><span class="o">/</span><span class="n">MAX</span><span class="o">/</span><span class="n">stim_times_neutral</span><span class="o">/</span>
+</pre></div>
+</div>
+</section>
+<section id="study-plan">
+<h2>Study plan<a class="headerlink" href="#study-plan" title="Permalink to this heading">#</a></h2>
+<section id="introduction-to-fmri">
+<h3>1. Introduction to fMRI<a class="headerlink" href="#introduction-to-fmri" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Charpter 1-2 in Textbook</p></li>
+<li><p>Module 1-12 of Part 1 in <a class="reference external" href="https://www.youtube.com/channel/UC_BIby85hZmcItMrkAlc8eA/videos?view=0&amp;sort=da&amp;flow=grid">Videos</a></p></li>
+</ul>
+<div class="important admonition">
+<p class="admonition-title">Key points</p>
+<ul class="simple">
+<li><p>Physical and chemical principle of MRI scan</p></li>
+<li><p>What are structural and functional MRI images? What’s the difference?</p></li>
+<li><p>BOLD signal and its features</p></li>
+<li><p>Artifacts and noise of fMRI</p></li>
+<li><p>Different types of experiment design</p></li>
+</ul>
+</div>
+<p>Addition to above readings and videos, here are some complementary contents which would be useful in this charpter:</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://radktob.files.wordpress.com/2017/05/scott_a-_huettel_allen_w-_song_gregory_mccarthybookzz-org1.pdf"><em>Functional Magnetic Resonance Imaging</em></a>, Charpter 1-9, 11</p></li>
+<li><p><a class="reference external" href="https://www.nature.com/articles/nature06976"><em>What we can do and what we cannot do with fMRI</em></a></p></li>
+</ul>
+</div>
+</section>
+<section id="preprocessing-of-fmri-data">
+<h3>2. Preprocessing of fMRI data<a class="headerlink" href="#preprocessing-of-fmri-data" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Charpter 3-4 in Textbook</p></li>
+<li><p>Module 13-14 of Part 1 in <a class="reference external" href="https://www.youtube.com/channel/UC_BIby85hZmcItMrkAlc8eA/videos?view=0&amp;sort=da&amp;flow=grid">Videos</a></p></li>
+</ul>
+<div class="important admonition">
+<p class="admonition-title">Key points</p>
+<ul class="simple">
+<li><p>Why we can’t use fMRI images directly gained from scanner?</p></li>
+<li><p>What’re the general steps in preprocessing? What’s the meaning of each step?</p></li>
+</ul>
+</div>
+<p>The scripts for preprocessing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">/</span><span class="n">bswift</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">Pessoa_Lab</span><span class="o">/</span><span class="n">MAX</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span><span class="n">all_preproc</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>The real fMRI preprocessing will be quite time consuming for just one subject</p>
+</div>
+<p>The proprocessed data(for neutral runs):</p>
+<ul class="simple">
+<li><p>Smooth:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/data/bswift-1/Pessoa_Lab/MAX/dataset/preproc/MAX???/func_neutral/MAX???_EP_Main_TR_MNI_2mm_SI_denoised.nii.gz
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Unsmooth:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/data/bswift-1/Pessoa_Lab/MAX/dataset/preproc/MAX???/func_neutral/MAX???_EP_Main_TR_MNI_2mm_I_denoised.nii.gz
+</pre></div>
+</div>
+<p>Complementary contents:</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://radktob.files.wordpress.com/2017/05/scott_a-_huettel_allen_w-_song_gregory_mccarthybookzz-org1.pdf"><em>Functional Magnetic Resonance Imaging</em></a>, Charpter 10</p></li>
+<li><p>An introdution PDF created by Kelly</p></li>
+</ul>
+</div>
+</section>
+<section id="first-level-analysis">
+<h3>3. First level analysis<a class="headerlink" href="#first-level-analysis" title="Permalink to this heading">#</a></h3>
+<p>Before dive into this charpter, one should at least have some systemic awareness of <strong>probability and statistics</strong>. Thus, complete courses are recommended. However, here are some good textbooks and YouTube channels for quick reviewing and reinforcement:</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mybiostats.files.wordpress.com/2015/03/casella-berger.pdf">Statistical Inference</a></p></li>
+<li><p><a class="reference external" href="https://books-library.net/files/books-library.net-10271851Vx7V9.pdf">R in Action</a></p></li>
+<li><p>YouTube channel: <a class="reference external" href="https://www.youtube.com/c/joshstarmer">StatQuest!!!</a></p></li>
+<li><p>YouTube channel: <a class="reference external" href="https://www.youtube.com/c/BrandonFoltz/playlists">Brandon Foltz</a></p></li>
+</ul>
+</div>
+<p>There are a lot of excellent resources other than above list. Please be free to search, ask and learn.</p>
+<p>For fMRI related analysis:</p>
+<ul class="simple">
+<li><p>Textbook: Charpter 5</p></li>
+<li><p>Module 15-22 of Part 1 in <a class="reference external" href="https://www.youtube.com/channel/UC_BIby85hZmcItMrkAlc8eA/videos?view=0&amp;sort=da&amp;flow=grid">Videos</a></p></li>
+</ul>
+<div class="important admonition">
+<p class="admonition-title">Key points</p>
+<ul class="simple">
+<li><p>The details of general linear regression and univariate approach for voxels/region of interest in a fMRI brain map</p></li>
+<li><p>The choice of independent variables in the model</p></li>
+<li><p>What is hemodynamic response function(HRF)? Why deconvolution?</p></li>
+<li><p>The pros and cons of assumed and unassumed shape HRF</p></li>
+<li><p>Multicollinearity</p></li>
+</ul>
+</div>
+<p>The scripts for first-level analysis:</p>
+<ul class="simple">
+<li><p>voxel-wise</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">/</span><span class="n">bswift</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">Pessoa_Lab</span><span class="o">/</span><span class="n">MAX</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span><span class="n">Murty_Final</span><span class="o">/</span><span class="n">voxelwise_analysis</span><span class="o">/</span><span class="n">condition_level</span><span class="o">/</span><span class="n">MAX_fMRI_Analysis_neutral_deconv_reducedRuns</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>ROI-wise</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">bswift</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="n">Pessoa_Lab</span><span class="o">/</span><span class="n">MAX</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span><span class="n">Murty_Final</span><span class="o">/</span><span class="n">ROI_analysis</span><span class="o">/</span><span class="n">condition_level</span><span class="o">/</span><span class="n">FNSandFNT</span><span class="o">/</span><span class="n">MAX_fMRI_Analysis_neutral_deconv_reducedRuns</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Reults of first-level analysis:</p>
+<ul class="simple">
+<li><p>voxel-wise</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/data/bswift-1/Pessoa_Lab/MAX/dataset/first_level/voxelwise/neutral_runs_conditionLevel_FNSandFNT/MAX???/
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>ROI-wise</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/data/bswift-1/Pessoa_Lab/MAX/dataset/first_level/ROI/neutral_runs_conditionLevel_FNSandFNT/MAX_ROIs_final_gm_85/MAX???/
+</pre></div>
+</div>
+<p>ROI-wise responses visualization</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">LCE</span><span class="o">-</span><span class="n">UMD</span><span class="o">/</span><span class="n">mood</span><span class="o">-</span><span class="n">anxiety</span><span class="o">/</span><span class="n">blob</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="mi">01</span><span class="o">-</span><span class="n">final_gm_85</span><span class="o">/</span><span class="mi">01</span><span class="o">-</span><span class="n">data_preprocessing</span><span class="o">.</span><span class="n">ipynb</span>
+</pre></div>
+</div>
+</section>
+<section id="group-level-analysis">
+<h3>4. Group level analysis<a class="headerlink" href="#group-level-analysis" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Charpter 6-7, 10 in Textbook</p></li>
+<li><p>Module 23-29 of Part 1 in <a class="reference external" href="https://www.youtube.com/channel/UC_BIby85hZmcItMrkAlc8eA/videos?view=0&amp;sort=da&amp;flow=grid">Videos</a></p></li>
+</ul>
+<div class="important admonition">
+<p class="admonition-title">Key points</p>
+<ul class="simple">
+<li><p>Why group level analysis?</p></li>
+<li><p>Generalized linear model, including parametric ones like t-test, ANOVA, ANCOVA, mixed effect model and non-parametric ones like permutation test, rank test etc.</p></li>
+<li><p>P-value and types of errors</p></li>
+<li><p>Correction for multipule comparsion</p></li>
+</ul>
+</div>
+<div class="seealso admonition">
+<p class="admonition-title">Useful AFNI program</p>
+<ul class="simple">
+<li><p>Data manipulate: <a class="reference external" href="https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dbucket.html">3dbucket</a></p></li>
+<li><p>Data calculator: <a class="reference external" href="https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dcalc.html">3dcalc</a></p></li>
+<li><p>(Multiple) T-test or more: <a class="reference external" href="https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dttest++.html">3dttest++</a></p></li>
+<li><p>AN(C)OVA: <a class="reference external" href="https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dMVM.html">3dMVM</a></p></li>
+<li><p>Linear mixed effect model: <a class="reference external" href="https://afni.nimh.nih.gov/pub/dist/doc/program_help/3dLME.html">3dLME</a></p></li>
+<li><p>and <a class="reference external" href="https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/statistics/main_toc.html">more</a>…</p></li>
+</ul>
+</div>
+</section>
+<section id="what-more">
+<h3>5. What’ more<a class="headerlink" href="#what-more" title="Permalink to this heading">#</a></h3>
+<p>Apart from above standard approach for fMRI analysis, more interesting contents such as brain connectivity, selection bias, graph theory etc. are just around the corner. The remaining part of Textbook and Part 2 of <a class="reference external" href="https://www.youtube.com/channel/UC_BIby85hZmcItMrkAlc8eA/videos?view=0&amp;sort=da&amp;flow=grid">Videos</a> have more details for them.
+Moreover, in addition to analyze fMRI images from frequentist point of view, Bayesian approach is gradually becoming popular. Here is a good <a class="reference external" href="https://bookdown.org/content/3890/">notebook</a> about practical Bayesian model in fMRI</p>
+<p>Have fun in learning!</p>
+</section>
+</section>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this heading">#</a></h2>
+<p><strong>LCE&#64;UMD</strong></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./md"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#important-resource">Important resource</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practice-example">Practice example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#study-plan">Study plan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-fmri">1. Introduction to fMRI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-of-fmri-data">2. Preprocessing of fMRI data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#first-level-analysis">3. First level analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-level-analysis">4. Group level analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-more">5. What’ more</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Songtao Song
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
